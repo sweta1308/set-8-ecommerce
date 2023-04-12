@@ -17,8 +17,8 @@ export const About = () => {
   
   useEffect(() => {getProductData()}, [])
   console.log(id )
-  // const product = productLists.find((product) => product.id === id)
-  // console.log(product)
+  const product = productLists.find((product) => product.id === Number(id))
+  console.log(product)
 
   return (
     <>
